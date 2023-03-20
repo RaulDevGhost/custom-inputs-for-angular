@@ -1,0 +1,40 @@
+<!-- <div class="drop">
+  <button class="dropbutton dropdown-toggle" type="button" (click)="showing()">
+    {{ optionValue }}
+  </button>
+  <ul class="dropdown-menu" [ngClass]="show ? 'show' : 'hide'">
+    <li
+      class="dropdown-item"
+      *ngFor="let option of options"
+      (click)="onChanging(option)"
+    >
+      {{ option }}
+    </li>
+  </ul>
+</div> -->
+
+<!-- <div class="select">
+  <input type="radio" name="option" (click)="showing()" />
+  <i class="toggle icon icon-arrow-down"></i>
+  <i class="toggle icon icon-arrow-up"></i>
+  <span class="placeholder">{{ optionValue }}</span>
+  <label *ngFor="let option of options" class="option">
+    <input type="radio" name="option" (click)="onChanging(option)" />
+    <span class="title animated fadeIn">{{ option }}</span>
+  </label>
+</div> -->
+
+<div class="group">
+  <div class="selected-item" [ngClass]="show ? 'arrow-down' : ''">
+    <div class="option">
+      <input type="radio" name="group" (click)="showing()" />
+      <p>{{ optionValue }}</p>
+    </div>
+  </div>
+  <div class="option-wrap" [ngClass]="show ? 'active' : ''">
+    <div class="option children" *ngFor="let option of options">
+      <input type="radio" name="group" (click)="onChanging(option)" />
+      <p>{{ option }}</p>
+    </div>
+  </div>
+</div>

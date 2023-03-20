@@ -1,0 +1,10 @@
+.test-container {
+  display: flex;
+  width: 500px;
+  background-color: red;
+
+  .item {
+    width: 250px;
+    background-color: aqua;
+  }
+}
