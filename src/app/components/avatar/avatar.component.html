@@ -1,1 +1,18 @@
-<p>avatar works!</p>
+<div class="image-container">
+  <img *ngIf="preview.length > 0" [src]="preview" class="" />
+  <div *ngIf="preview.length === 0" class="user-profile">
+    <span class="user-name">{{ getInitalsFromName() }}</span>
+  </div>
+  <div class="button-container">
+    <div class="button-texts">
+      <p>Upload new Avatar</p>
+      <p>The maximum file size allowed is 200KB.</p>
+    </div>
+    <input
+      type="file"
+      (change)="selectFile($event)"
+      class="select-profile-picture"
+    />
+    <span class="message">CHOOSE</span>
+  </div>
+</div>

@@ -216,7 +216,7 @@
   vertical-align: top;
   background: #fff;
   text-align: left;
-  padding: 30px;
+  padding: 5px;
   width: 100%;
   margin: 10px;
   height: 120px;
@@ -311,4 +311,5 @@
   position: relative;
   width: 100%;
   background-color: #fff;
+  z-index: 10000;
 }
