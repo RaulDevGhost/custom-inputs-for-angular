@@ -1,1 +1,9 @@
-<p>profile works!</p>
+<div class="profile-container">
+  <app-avatar></app-avatar>
+  <app-dropdown
+    (optionSelected)="addOption($event)"
+    [name]="'testName'"
+    [options]="options"
+  ></app-dropdown>
+  <app-checkbox [checkboxOptions]="checkboxOptions"></app-checkbox>
+</div>

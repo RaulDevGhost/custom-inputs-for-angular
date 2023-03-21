@@ -1,11 +1,9 @@
-<app-avatar></app-avatar>
+<div class="container">
+  <app-sidenav></app-sidenav>
+  <div class="page-content">
+    <app-profile *ngIf="urlComponent === '/profile'"></app-profile>
+    <app-equipment *ngIf="urlComponent === '/equipment'"></app-equipment>
+  </div>
+</div>
 
-<app-dropdown
-  (optionSelected)="addOption($event)"
-  [name]="'testName'"
-  [options]="options"
-></app-dropdown>
-
-<app-checkbox [checkboxOptions]="checkboxOptions"></app-checkbox>
-
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->

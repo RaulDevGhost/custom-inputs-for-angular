@@ -1,10 +1,9 @@
-.test-container {
-  display: flex;
-  width: 500px;
-  background-color: red;
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
 
-  .item {
-    width: 250px;
-    background-color: aqua;
-  }
+.page-content {
+  margin-left: 100px;
+  margin-right: 100px;
 }
