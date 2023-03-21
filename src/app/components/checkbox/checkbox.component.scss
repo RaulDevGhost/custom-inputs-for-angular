@@ -1,5 +1,15 @@
+.checkboxers-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  padding-top: 4rem;
+}
+
 .item {
-  padding: 1rem;
+  padding: 1rem 0;
+}
+
+.item:nth-child(3n + 4) {
+  grid-column: 1 / 2;
 }
 
 .form-control {
@@ -31,14 +41,23 @@ input[type="checkbox"] {
   place-content: center;
 }
 
+input[type="checkbox"]:checked {
+  background-color: #000;
+}
+
 input[type="checkbox"]::before {
   content: "";
-  width: 1.15rem;
-  height: 1.15em;
+  width: 0.65em;
+  height: 0.65em;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
-  background-color: CanvasText;
+  //background-color: #fff;
+  transform-origin: bottom left;
+  //clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: #000;
+  background-image: url("/assets/svg/okay.svg");
+  background-size: 0.7rem;
 }
 
 input[type="checkbox"]:checked::before {

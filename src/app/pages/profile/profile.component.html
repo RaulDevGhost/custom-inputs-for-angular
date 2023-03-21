@@ -1,9 +1,64 @@
 <div class="profile-container">
+  <h1>Profile</h1>
   <app-avatar></app-avatar>
-  <app-dropdown
-    (optionSelected)="addOption($event)"
-    [name]="'testName'"
-    [options]="options"
-  ></app-dropdown>
-  <app-checkbox [checkboxOptions]="checkboxOptions"></app-checkbox>
+  <div class="profile-block">
+    <app-input [placeholder]="'Firstname'"></app-input>
+    <app-input [placeholder]="'Lastname'"></app-input>
+    <app-input [placeholder]="'Jobtitle'"></app-input>
+    <app-dropdown
+      (optionSelected)="addOption($event)"
+      [name]="'Salutation of gender'"
+      [options]="options"
+    ></app-dropdown>
+  </div>
+  <div class="top-block">
+    <div class="heading">
+      <h1>Password</h1>
+    </div>
+    <div class="two-inputs">
+      <app-input [placeholder]="'Password'" [type]="'password'"></app-input>
+      <app-input
+        [placeholder]="'Confirm Password'"
+        [type]="'password'"
+      ></app-input>
+    </div>
+  </div>
+  <div class="top-block">
+    <div class="heading">
+      <h1>Contact</h1>
+    </div>
+    <div class="two-inputs">
+      <app-input [type]="'email'" [placeholder]="'Email'"></app-input>
+      <app-input [placeholder]="'Phone Number'"></app-input>
+    </div>
+  </div>
+  <div class="top-block">
+    <div class="heading">
+      <h1>Contact</h1>
+    </div>
+    <div class="six-inputs">
+      <app-input [placeholder]="'Company'"></app-input>
+      <app-dropdown
+        (optionSelected)="addOption($event)"
+        [name]="'Language'"
+        [options]="languageOptions"
+      ></app-dropdown>
+      <app-input [placeholder]="'Postcode'"></app-input>
+      <app-input [placeholder]="'Reseller'"></app-input>
+      <app-input [placeholder]="'Pilot License'"></app-input>
+      <app-input [placeholder]="'Office'"></app-input>
+    </div>
+    <app-checkbox [checkboxOptions]="checkboxOptions"></app-checkbox>
+  </div>
+  <div class="top-block">
+    <div class="heading">
+      <h1>Drone</h1>
+    </div>
+    <div class="two-inputs">
+      <app-input [placeholder]="'License Key'" [type]="'password'"></app-input>
+    </div>
+  </div>
+  <div class="button-container">
+    <app-button [title]="'UPDATE'"></app-button>
+  </div>
 </div>

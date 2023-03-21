@@ -1,0 +1,11 @@
+.quantum-input {
+  width: 300px;
+  height: 45px;
+  border: 1px solid rgba(22, 27, 37, 0.23);
+  padding-left: 14px;
+}
+
+input:focus {
+  border: 1px solid #000;
+  outline: none;
+}

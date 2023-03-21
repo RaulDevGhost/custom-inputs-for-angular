@@ -316,6 +316,8 @@ export class ProfileComponent {
     'Zimbabwe',
   ];
 
+  languageOptions: string[] = ['English', 'Spanish', 'German'];
+
   addOption(option: string) {
     console.log('This option --->', option);
   }

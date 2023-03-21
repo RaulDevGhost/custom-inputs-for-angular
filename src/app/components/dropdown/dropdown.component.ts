@@ -9,7 +9,7 @@ export class DropdownComponent {
   @Input() name: string = '';
   @Input() options: string[] = [];
   @Output() optionSelected = new EventEmitter<string>();
-  optionValue: string = 'Canada';
+  optionValue: string = '';
   show: boolean = false;
 
   showing() {

@@ -1,1 +1,8 @@
-<p>button works!</p>
+<button *ngIf="!searchType" class="quantum-button">{{ title }}</button>
+
+<div class="container" *ngIf="searchType">
+  <form>
+    <input type="search" placeholder="Search" />
+    <button type="submit">Search</button>
+  </form>
+</div>

@@ -1,9 +1,69 @@
 .topnav-container {
   display: grid;
-  grid-template-columns: 1fr 150px 100px;
+  grid-template-columns: 1fr 350px 100px;
   height: 100px;
   margin-top: 30px;
   align-content: center;
+
+  .image-container {
+    display: flex;
+    align-items: self-end;
+  }
+
+  img {
+    height: 107px;
+    width: 107px;
+    border-radius: 50%;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 2rem;
+
+    .texts {
+      padding-top: 1px;
+
+      .name {
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0;
+      }
+    }
+
+    span {
+      border: 1px solid #000;
+      padding: 10px;
+      width: 119px;
+      height: 45px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3274b0;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: 700;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .user-name {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .search-container {
+    margin-right: 5rem;
+  }
 
   .burger-container {
     display: inline-block;

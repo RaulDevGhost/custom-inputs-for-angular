@@ -28,7 +28,8 @@
   <div class="selected-item" [ngClass]="show ? 'arrow-down' : ''">
     <div class="option">
       <input type="radio" name="group" (click)="showing()" />
-      <p>{{ optionValue }}</p>
+      <p *ngIf="optionValue">{{ optionValue }}</p>
+      <p *ngIf="!optionValue">{{ name }}</p>
     </div>
   </div>
   <div class="option-wrap" [ngClass]="show ? 'active' : ''">

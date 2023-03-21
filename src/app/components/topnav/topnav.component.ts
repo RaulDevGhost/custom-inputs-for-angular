@@ -7,8 +7,17 @@ import { Component } from '@angular/core';
 })
 export class TopnavComponent {
   clickOn: boolean = false;
+  username: string = 'Raul Rincones';
 
   opening() {
     this.clickOn = !this.clickOn;
+  }
+
+  getInitalsFromName() {
+    if (this.username) {
+      const initial = this.username.substring(0, 1);
+      return initial.toUpperCase();
+    }
+    return;
   }
 }

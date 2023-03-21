@@ -13,6 +13,7 @@ import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { FormsModule } from '@angular/forms';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TopnavComponent } from './components/topnav/topnav.component';
     EquipmentComponent,
     AvatarComponent,
     TopnavComponent,
+    InputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

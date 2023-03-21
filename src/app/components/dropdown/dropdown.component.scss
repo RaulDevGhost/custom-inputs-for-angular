@@ -216,16 +216,18 @@
   vertical-align: top;
   background: #fff;
   text-align: left;
-  padding: 5px;
-  width: 100%;
-  margin: 10px;
-  height: 120px;
+  width: 300px;
+  height: 45px;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+p {
+  color: #625f5f;
 }
 
 /* real select */
@@ -273,12 +275,12 @@
 
 .option-wrap {
   display: none;
-  border: 1px solid #000000;
+  border: 1px solid rgba(22, 27, 37, 0.23);
 }
 
 .option {
   color: #000;
-  border: 1px solid #000000;
+  border: 1px solid rgba(22, 27, 37, 0.23);
   position: relative;
   cursor: pointer;
   padding: 0px 20px;

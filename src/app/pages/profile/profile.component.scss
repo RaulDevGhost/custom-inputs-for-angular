@@ -1,4 +1,40 @@
 .profile-container {
   display: flex;
   flex-direction: column;
+
+  .profile-block {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 1.5rem;
+  }
+
+  .top-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .two-inputs {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 1.5rem;
+  }
+
+  .six-inputs {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 1.5rem;
+  }
+
+  .checkboxers-container {
+    padding-top: 4rem;
+  }
+
+  .button-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }

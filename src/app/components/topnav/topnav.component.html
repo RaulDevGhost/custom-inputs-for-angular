@@ -1,6 +1,24 @@
 <div class="topnav-container">
-  <div class="avatar-container">AVATAR</div>
-  <div class="search-container">SEARCH INPUT</div>
+  <div class="avatar-container">
+    <div class="image-container">
+      <div class="user-profile">
+        <span class="user-name">{{ getInitalsFromName() }}</span>
+      </div>
+      <div class="button-container">
+        <div class="texts">
+          <p>
+            <b class="name">Raul Rincones</b> <br />
+            UAV Operations Manager
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search-container">
+    <div class="button-container">
+      <app-button [searchType]="true" [title]="'UPDATE'"></app-button>
+    </div>
+  </div>
   <div
     class="burger-container"
     [ngClass]="clickOn ? 'change' : ''"
