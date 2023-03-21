@@ -1,0 +1,23 @@
+<div class="topnav-container">
+  <div class="avatar-container">AVATAR</div>
+  <div class="search-container">SEARCH INPUT</div>
+  <div
+    class="burger-container"
+    [ngClass]="clickOn ? 'change' : ''"
+    (click)="opening()"
+  >
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="circle"></div>
+  </div>
+</div>
+<span class="line"></span>
+<div class="menu-open" [ngClass]="clickOn ? 'showing' : ''">
+  <ul>
+    <li>
+      <img class="icon" src="../assets/svg/out.svg" />
+      <div>Logout</div>
+    </li>
+  </ul>
+</div>

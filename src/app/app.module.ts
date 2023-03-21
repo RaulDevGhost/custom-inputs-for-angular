@@ -12,6 +12,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { FormsModule } from '@angular/forms';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { TopnavComponent } from './components/topnav/topnav.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
     ProfileComponent,
     EquipmentComponent,
     AvatarComponent,
+    TopnavComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
