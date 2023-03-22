@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./styles/fonts.scss");
+
+:root {
+  --quantum-black: #161b25;
+  --quantum-white: #ffffff;
+  --quantum-black-button-text: #161616;
+  --extra-big: 32px;
+  --big: 24px;
+  --normal: 16px;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -16,4 +26,19 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-family: AvenirNext-Bold;
+  font-size: var(--extra-big);
+}
+
+h2 {
+  font-family: AvenirNext-Bold;
+  font-size: var(--big);
+}
+
+p {
+  font-family: AvenirNext-Regular;
+  font-size: var(--normal);
 }

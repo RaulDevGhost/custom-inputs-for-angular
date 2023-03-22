@@ -4,6 +4,7 @@
   background-color: #fff;
   color: #000;
   border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .container {
@@ -32,6 +33,7 @@ input[type="search"] {
   color: inherit;
   border: 1px solid transparent;
   border-radius: inherit;
+  cursor: pointer;
 }
 
 input[type="search"]::placeholder {

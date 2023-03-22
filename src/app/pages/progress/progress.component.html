@@ -1,0 +1,16 @@
+<div class="progress-container">
+  <div class="progress-text">
+    <h1>Hello Raul,</h1>
+    <p>
+      Welcome to Quantum Systems Customer Portal.<br />
+      Here you can manage, update and monitoring your drones.
+    </p>
+  </div>
+  <div class="bar-container">
+    <div class="percentage-label">{{ profileProgress }}%</div>
+    <div class="bar">
+      <div class="progress" [ngStyle]="{ width: profileProgress + '%' }"></div>
+    </div>
+  </div>
+  <app-button [title]="'COMPLETE PROFILE'" routerLink="/profile"></app-button>
+</div>

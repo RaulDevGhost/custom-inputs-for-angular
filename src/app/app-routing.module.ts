@@ -5,7 +5,11 @@ import { EquipmentComponent } from './pages/equipment/equipment.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/progress', pathMatch: 'full' },
+  {
+    path: 'progress',
+    component: AppComponent,
+  },
   {
     path: 'profile',
     component: AppComponent,

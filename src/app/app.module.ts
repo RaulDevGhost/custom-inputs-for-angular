@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { TopnavComponent } from './components/topnav/topnav.component';
 import { InputComponent } from './components/input/input.component';
+import { ProgressComponent } from './pages/progress/progress.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { InputComponent } from './components/input/input.component';
     AvatarComponent,
     TopnavComponent,
     InputComponent,
+    ProgressComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
