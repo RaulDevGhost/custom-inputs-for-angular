@@ -20,7 +20,7 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding-left: 2rem;
 
     .texts {
@@ -140,10 +140,10 @@
 
   & ul > li {
     display: inline-flex;
-    padding: 2rem;
+    padding: 1rem;
     list-style-type: none;
     gap: 2rem;
-    justify-content: end;
     align-items: center;
+    cursor: pointer;
   }
 }

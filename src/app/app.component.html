@@ -2,9 +2,17 @@
   <app-sidenav></app-sidenav>
   <div class="page-content">
     <app-topnav></app-topnav>
+    <br />
+    <br />
+    <button *ngIf="!loginDisplay" (click)="login()">LOGIN</button>
+    <br />
+    <br />
+    sdasddas
+    <button *ngIf="loginDisplay" (click)="logout()">Logout</button>
     <app-profile *ngIf="urlComponent === '/profile'"></app-profile>
     <app-equipment *ngIf="urlComponent === '/equipment'"></app-equipment>
     <app-progress *ngIf="urlComponent === '/progress'"></app-progress>
+    <app-home *ngIf="urlComponent === '/home'"></app-home>
   </div>
 </div>
 
